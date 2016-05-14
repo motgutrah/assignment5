@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <h1>Mama Felicia</h1> 
+ <meta charset="UTF-8">
+ <meta name="description" content="Restaurant Members Page">
+ <meta name="keywords" content="Restaurant, Pizzeria, Italian">
+ <meta name="author" content="Jonathan Valentin">
+ <title>Assignment #1 Members</title>
+ <style type = "text/css">
+ div
+ {
+  float:left;
+  border: 3px solid black;
+  padding: 10px 20px;
+  width: 200px;
+  height: 400px;
+  color: white;
+  text-align: center;
+  background: green;
+  
+  
+
+  border-radius: 10px; /* adding rounded corners */
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+
+#style2
+{
+  float:left;
+}
+
+#footerStyle
+{
+  border: 3px solid red;
+  padding: 10px 20px;
+  width:98%;
+  height:100px;
+  box-shadow: 10px 10px 5px #888888;
+  text-align: left;
+  background: DarkRed;
+  color: LightGreen;
+}
+body 
+{
+ background-color: lightblue;
+}
+h1 
+{
+ text-shadow: 3px 3px #FF0000;
+}   
+#imgstyle
+{
+  width: 1300px;
+}
+
+</style>
+
+</head>
+<body>
+ 
+  <header>
+    <p id = "imgstyle">
+     
+     <a href = "home.html">
+      <img src = "Images\home_button.png" width = "200"  
+      height = "100" alt = "home page">
+    </a>
+
+    <a href = "Menus.html">
+      <img src = "Images\menu_button.png" width = "200"  
+      height = "100" alt = "Menus page">
+    </a>
+
+    <a href = "Reservation.html">
+      <img src = "Images\reservation-button.png" width = "200"  
+      height = "100" alt = "Reservation page">
+    </a>
+
+    <a href = "private_dinning.html">
+      <img src = "Images\Private_Dinning.png" width = "200" 
+      height = "100" alt = "Pivate dinning page">
+    </a>
+
+    <a href = "Comments.html">
+      <img src = "Images\comment-button.jpg" width = "200"  
+      height = "100" alt = "Comments Page">
+    </a>
+
+    <a href = "Members.html">
+      <img src = "Images\members_button.jpg" width = "200" 
+      height = "100" alt = "Members Page">
+    </a>
+  </p>
+</header>
+<div> 
+  <p> Member Benefits
+    <ul>
+     <li>Members of this Restaurant get Coupons sent to their emails for their next purchase.</li>
+     <li>Members of this Restaurant get priority in reservations</li>
+     <li>Members of this Restaurant get to store points that they can use to get more coupons</li>
+   </p>
+ </div>
+
+ <div id = "style2">
+  <p> login for existing members </p>
+  <form method="post" action = "Members.html">
+    User Name:<br>
+    <input type="text" name="User Name">
+    <br>
+    Password:<br>
+    <input type="text" name="Password">
+    <br><br>
+    <input type="submit">
+  </form>
+</div>  
+
+<div id = "style2">
+  <p> Sign up for new members<p>
+    <form action="Members.php" method="post">
+     User Name:<br>
+     <input type="text" id="usernamer" name="UserName">
+     <br>
+     Password:<br>
+     <input type="text" id="passcode" name="Password">
+     <br>
+     Name:<br>
+     <input type="text" id="fullname" name="Name">
+     <br>
+     Phone:<br>
+     <input type="text" name="Phone #">
+     <br>
+     Email:<br>
+     <input type="text" id="email" name="Email">
+     <br>
+     Address:<br>
+     <input type="text" name="Address">
+     <br>
+     City:<br>
+     <input type="text" name="City">
+     <br>
+     State:<br>
+     <input type="text" name="State">
+     <br><br>
+     <input type="submit">
+   </form>
+ </div>
+</body>
+<footer>
+  <div id= "footerStyle">
+   <p> Mama Felicia &copy;</p>
+   <p> 1414 14th street, Bronx NY </p>
+   <p> Phone # 555-555-5555 </p> 
+ </div>
+
+ 
+</footer>
+
+</html>

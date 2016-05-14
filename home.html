@@ -1,0 +1,146 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+   <h1>Mama Felicia</h1>
+   <meta charset="UTF-8">
+   <meta name="description" content="Restaurant Home Page">
+   <meta name="keywords" content="Restaurant, Pizzeria, Italian">
+   <meta name="author" content="Jonathan Valentin">
+   <title>Assignment #1 Main Page</title>
+   <style type = "text/css">
+
+   div
+   {
+    border: 3px solid black;
+    
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    background: green;
+    
+
+    border-radius: 10px; /* adding rounded corners */
+    margin-bottom: 20px;
+    
+  }
+  #footerStyle
+  {
+    border: 3px solid red;
+    padding: 10px 20px;
+    width:98%;
+    height:100px;
+    box-shadow: 10px 10px 5px #888888;
+    text-align: left;
+    background: DarkRed;
+    color: LightGreen;
+  }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+  body 
+  {
+   background-color: lightblue;
+ }
+ h1 
+ {
+  text-shadow: 3px 3px #FF0000;
+}   
+p.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+#cover
+{
+  position: relative;
+  margin: 0 0;
+  -webkit-animation: mymove 5s 1; /* Chrome, Safari, Opera */
+  animation: mymove 5s 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+#cover img
+{
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 4s ease-in-out;
+  transition: opacity 4s ease-in-out;
+}
+#cover img.top:hover
+{ opacity:0; }
+
+#imgstyle
+{
+  width: 1300px;
+}
+</style>
+</head>
+<body>
+ <header>
+   <p id = "imgstyle">
+
+     <a href = "home.html">
+      <img src = "Images\home_button.png" width = "200"  
+      height = "100" alt = "home page">
+    </a>
+
+    <a href = "Menus.html">
+      <img src = "Images\menu_button.png" width = "200"  
+      height = "100" alt = "Menus page">
+    </a>
+
+    <a href = "Reservation.html">
+      <img src = "Images\reservation-button.png" width = "200"  
+      height = "100" alt = "Reservation page">
+    </a>
+
+    <a href = "private_dinning.html">
+      <img src = "Images\Private_Dinning.png" width = "200" 
+      height = "100" alt = "Pivate dinning page">
+    </a>
+
+    <a href = "Comments.html">
+      <img src = "Images\comment-button.jpg" width = "200"  
+      height = "100" alt = "Comments Page">
+    </a>
+
+    <a href = "Members.html">
+      <img src = "Images\members_button.jpg" width = "200" 
+      height = "100" alt = "Members Page">
+    </a>
+  </p>
+</header>
+
+<div id= "cover">
+ <img src = "Images\logo2.png"  alt = "italian flag">
+ <img class = "top" src = "Images\flag2.png"   alt = "Restauraunt logo">
+</div>
+<p>
+  <h2>Mama Felicia's Italian Pizzeria</h2>
+  Here at our pizzeria we offer the best service in the town. we have many different italian food for you to try.
+
+  </p>
+</body>
+<footer>
+ <div id = "footerStyle">
+  <p class = "serif"> Mama Felicia &copy;</p>
+  <p class = "sansserif"> 1414 14th street, Bronx NY </p>
+  <p class = "sansserrif"> Phone # 555-555-5555 </p> 
+</div>
+</footer>
+
+
+
+</html>

@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+   <h1>Mama Felicia</h1>
+   <meta charset="UTF-8">
+   <meta name="description" content="Restaurant Reservation Page">
+   <meta name="keywords" content="Restaurant, Pizzeria, Italian">
+   <meta name="author" content="Jonathan Valentin">
+   <title>Assignment #1 Reservation</title>
+   
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   
+<script src="Scripts\reservationscript.js"></script>
+   <style type = "text/css">
+   div
+   {
+    border: 3px solid black;
+    padding: 10px 20px;
+    width: 300px;
+    height: 525px;
+    text-align: center;
+    background: green;
+    
+
+    border-radius: 10px; /* adding rounded corners */
+    margin-bottom: 20px;
+  }
+
+  #footerStyle
+  {
+    border: 3px solid red;
+    padding: 10px 20px;
+    width:98%;
+    height:100px;
+    box-shadow: 10px 10px 5px #888888;
+    text-align: left;
+    background: DarkRed;
+    color: LightGreen;
+  }
+#imgstyle
+{
+  width: 1300px;
+}
+  
+  body 
+  {
+   background-color: lightblue;
+ }
+ h1 
+ {
+   text-shadow: 3px 3px #FF0000;
+ }   
+
+ 
+ </style>
+
+</head>
+<body>
+
+  <header>
+    <p id ="imgstyle">
+     
+     <a href = "home.html">
+      <img src = "Images\home_button.png" width = "200"  
+      height = "100" alt = "home page">
+    </a>
+
+    <a href = "Menus.html">
+      <img src = "Images\menu_button.png" width = "200"  
+      height = "100" alt = "Menus page">
+    </a>
+
+    <a href = "Reservation.html">
+      <img src = "Images\reservation-button.png" width = "200"  
+      height = "100" alt = "Reservation page">
+    </a>
+
+    <a href = "private_dinning.html">
+      <img src = "Images\Private_Dinning.png" width = "200" 
+      height = "100" alt = "Pivate dinning page">
+    </a>
+s
+    <a href = "Comments.html">
+      <img src = "Images\comment-button.jpg" width = "200"  
+      height = "100" alt = "Comments Page">
+    </a>
+
+    <a href = "Members.html">
+      <img src = "Images\members_button.jpg" width = "200" 
+      height = "100" alt = "Members Page">
+    </a>
+  </p>
+</header>
+
+<p>
+ Choose the day of your Reservation and Time
+</p>
+
+<div class="main" id = "form">
+<p id="head"></p> <!-- This Segment Displays The Validation Rule -->
+<form id="theForm" action="" method="post"> <!-- Form Starts From Here -->
+<label>Full Name:</label>
+<input id='firstname' type='text'>
+<p id="p1"></p> <!--This Segment Displays The Validation Rule For Name-->
+
+<label>Email:</label>
+<input id='email' type='text'>
+<p id="p3"></p> <!-- This Segment Displays The Validation Rule For Email -->
+
+ <br> enter date of appointment
+  <input type="date" id = "mydate" name="mydate" value="2001-01-01" />
+  
+    <br>
+    <p id = "p4"></p>
+    time:<br>
+    <input type="Time" name="Time" id="time" value="11:00"><br>
+    <br>
+
+  Amount of people:<br>
+    <input type="text" name="People" value="1"><br>
+    <br>
+   <p>Private Dinning</p>
+    <select name="Private Dinning">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    <p>
+    </p>
+    <input type = "button" value = "Reset" id = "ResetBtn" onclick = "myFunction();"/>
+
+<button id="submit">Check Form</button>
+</form>
+</div>
+</body>
+<footer>
+  <div id = "footerStyle">
+    <p> Mama Felicia &copy; </p>
+    <p> 1414 14th street, Bronx NY </p>
+    <p> Phone # 555-555-5555 </p> 
+  </div>
+</footer>
+
+</html>
